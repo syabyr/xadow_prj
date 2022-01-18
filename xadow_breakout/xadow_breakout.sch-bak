@@ -1,0 +1,362 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 61E65539
+P 3150 4750
+F 0 "#PWR?" H 3150 4500 50  0001 C CNN
+F 1 "GND" H 3155 4577 50  0000 C CNN
+F 2 "" H 3150 4750 50  0001 C CNN
+F 3 "" H 3150 4750 50  0001 C CNN
+	1    3150 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L mybays_connector:FH26W-35S-0.3SHW J1
+U 1 1 61E402A8
+P 3150 3400
+F 0 "J1" H 3150 2009 50  0000 C CNN
+F 1 "FH26W-35S-0.3SHW" H 2500 2300 50  0000 C CNN
+F 2 "mybays_connector:FPC35-SMD-0.3(FH26W)" H 3150 3400 50  0001 C CNN
+F 3 "" H 3150 3400 50  0001 C CNN
+	1    3150 3400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3150 4700 3150 4750
+Wire Wire Line
+	2750 2650 2800 2650
+Wire Wire Line
+	2750 2750 2800 2750
+Wire Wire Line
+	3550 2700 3500 2700
+Wire Wire Line
+	3550 2800 3500 2800
+Wire Wire Line
+	3550 2900 3500 2900
+Wire Wire Line
+	3550 3000 3500 3000
+Wire Wire Line
+	3550 3100 3500 3100
+Wire Wire Line
+	3550 3200 3500 3200
+Wire Wire Line
+	3550 3300 3500 3300
+Wire Wire Line
+	3550 3400 3500 3400
+Wire Wire Line
+	3550 3500 3500 3500
+Wire Wire Line
+	3550 3600 3500 3600
+Wire Wire Line
+	3550 3700 3500 3700
+Wire Wire Line
+	3550 3800 3500 3800
+Wire Wire Line
+	3550 3900 3500 3900
+Wire Wire Line
+	3550 4000 3500 4000
+Wire Wire Line
+	3550 4100 3500 4100
+Wire Wire Line
+	3550 4200 3500 4200
+Wire Wire Line
+	3550 4300 3500 4300
+Wire Wire Line
+	2750 4350 2800 4350
+Wire Wire Line
+	2750 4250 2800 4250
+Wire Wire Line
+	2750 4150 2800 4150
+Wire Wire Line
+	2750 4050 2800 4050
+Wire Wire Line
+	2750 3950 2800 3950
+Wire Wire Line
+	2750 3850 2800 3850
+Wire Wire Line
+	2750 3750 2800 3750
+Wire Wire Line
+	2750 3650 2800 3650
+Wire Wire Line
+	2750 3550 2800 3550
+Wire Wire Line
+	2750 3450 2800 3450
+Wire Wire Line
+	2750 3350 2800 3350
+Wire Wire Line
+	2750 3250 2800 3250
+Wire Wire Line
+	2750 3150 2800 3150
+Wire Wire Line
+	2750 3050 2800 3050
+Wire Wire Line
+	2750 2950 2800 2950
+Wire Wire Line
+	2750 2850 2800 2850
+Text GLabel 3550 2700 2    50   Input ~ 0
+CTP_SDA
+$Comp
+L power:GND #PWR?
+U 1 1 61E85B85
+P 6100 2250
+F 0 "#PWR?" H 6100 2000 50  0001 C CNN
+F 1 "GND" H 6105 2077 50  0000 C CNN
+F 2 "" H 6100 2250 50  0001 C CNN
+F 3 "" H 6100 2250 50  0001 C CNN
+	1    6100 2250
+	1    0    0    1   
+$EndComp
+$Comp
+L mybays_connector:FH26W-35S-0.3SHW J?
+U 1 1 61E85B8B
+P 6100 3600
+F 0 "J?" H 6100 2209 50  0000 C CNN
+F 1 "FH26W-35S-0.3SHW" H 6550 2550 50  0000 C CNN
+F 2 "mybays_connector:FPC35-SMD-0.3(FH26W)" H 6100 3600 50  0001 C CNN
+F 3 "" H 6100 3600 50  0001 C CNN
+	1    6100 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2300 6100 2250
+Wire Wire Line
+	5700 4350 5750 4350
+Wire Wire Line
+	5700 4250 5750 4250
+Wire Wire Line
+	6500 4300 6450 4300
+Wire Wire Line
+	6500 4200 6450 4200
+Wire Wire Line
+	6500 4100 6450 4100
+Wire Wire Line
+	6500 4000 6450 4000
+Wire Wire Line
+	6500 3900 6450 3900
+Wire Wire Line
+	6500 3800 6450 3800
+Wire Wire Line
+	6500 3700 6450 3700
+Wire Wire Line
+	6500 3600 6450 3600
+Wire Wire Line
+	6500 3500 6450 3500
+Wire Wire Line
+	6500 3400 6450 3400
+Wire Wire Line
+	6500 3300 6450 3300
+Wire Wire Line
+	6500 3200 6450 3200
+Wire Wire Line
+	6500 3100 6450 3100
+Wire Wire Line
+	6500 3000 6450 3000
+Wire Wire Line
+	6500 2900 6450 2900
+Wire Wire Line
+	6500 2800 6450 2800
+Wire Wire Line
+	6500 2700 6450 2700
+Wire Wire Line
+	5700 2650 5750 2650
+Wire Wire Line
+	5700 2750 5750 2750
+Wire Wire Line
+	5700 2850 5750 2850
+Wire Wire Line
+	5700 2950 5750 2950
+Wire Wire Line
+	5700 3050 5750 3050
+Wire Wire Line
+	5700 3150 5750 3150
+Wire Wire Line
+	5700 3250 5750 3250
+Wire Wire Line
+	5700 3350 5750 3350
+Wire Wire Line
+	5700 3450 5750 3450
+Wire Wire Line
+	5700 3550 5750 3550
+Wire Wire Line
+	5700 3650 5750 3650
+Wire Wire Line
+	5700 3750 5750 3750
+Wire Wire Line
+	5700 3850 5750 3850
+Wire Wire Line
+	5700 3950 5750 3950
+Wire Wire Line
+	5700 4050 5750 4050
+Wire Wire Line
+	5700 4150 5750 4150
+Text GLabel 6500 2700 2    50   Input ~ 0
+CTP_SDA
+$Comp
+L power:GND #PWR?
+U 1 1 61E99C30
+P 3150 2250
+F 0 "#PWR?" H 3150 2000 50  0001 C CNN
+F 1 "GND" H 3155 2077 50  0000 C CNN
+F 2 "" H 3150 2250 50  0001 C CNN
+F 3 "" H 3150 2250 50  0001 C CNN
+	1    3150 2250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3150 2250 3150 2300
+$Comp
+L power:GND #PWR?
+U 1 1 61E9D14F
+P 6100 4750
+F 0 "#PWR?" H 6100 4500 50  0001 C CNN
+F 1 "GND" H 6105 4577 50  0000 C CNN
+F 2 "" H 6100 4750 50  0001 C CNN
+F 3 "" H 6100 4750 50  0001 C CNN
+	1    6100 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4700 6100 4750
+Text GLabel 2750 2750 0    50   Input ~ 0
+CTP_SCL
+Text GLabel 5700 2750 0    50   Input ~ 0
+CTP_SCL
+Text GLabel 2750 4350 0    50   Input ~ 0
+CTP_EINT
+Text GLabel 5700 4350 0    50   Input ~ 0
+CTP_EINT
+Text GLabel 2750 4150 0    50   Input ~ 0
+CTP_RST
+Text GLabel 5700 4150 0    50   Input ~ 0
+CTP_RST
+Text GLabel 2750 2850 0    50   Input ~ 0
+PWM_BACKLIGHT
+Text GLabel 5700 2850 0    50   Input ~ 0
+PWM_BACKLIGHT
+Text GLabel 3550 3800 2    50   Input ~ 0
+LSRSTB
+Text GLabel 6500 3800 2    50   Input ~ 0
+LSRSTB
+Text GLabel 2750 3750 0    50   Input ~ 0
+LSCE_B
+Text GLabel 5700 3750 0    50   Input ~ 0
+LSCE_B
+Text GLabel 2750 3550 0    50   Input ~ 0
+LSCK0
+Text GLabel 5700 3550 0    50   Input ~ 0
+LSCK0
+Text GLabel 3550 3700 2    50   Input ~ 0
+LSA0
+Text GLabel 6500 3700 2    50   Input ~ 0
+LSA0
+Text GLabel 2750 3650 0    50   Input ~ 0
+LSDA0
+Text GLabel 5700 3650 0    50   Input ~ 0
+LSDA0
+Text GLabel 3550 3600 2    50   Input ~ 0
+LPTE
+Text GLabel 6500 3600 2    50   Input ~ 0
+LPTE
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61EA2920
+P 3550 4000
+F 0 "#PWR?" H 3550 3850 50  0001 C CNN
+F 1 "+3V3" V 3565 4128 50  0000 L CNN
+F 2 "" H 3550 4000 50  0001 C CNN
+F 3 "" H 3550 4000 50  0001 C CNN
+	1    3550 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61EA3352
+P 6500 4000
+F 0 "#PWR?" H 6500 3850 50  0001 C CNN
+F 1 "+3V3" V 6515 4128 50  0000 L CNN
+F 2 "" H 6500 4000 50  0001 C CNN
+F 3 "" H 6500 4000 50  0001 C CNN
+	1    6500 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+2V8 #PWR?
+U 1 1 61EA4178
+P 2750 4050
+F 0 "#PWR?" H 2750 3900 50  0001 C CNN
+F 1 "+2V8" V 2765 4178 50  0000 L CNN
+F 2 "" H 2750 4050 50  0001 C CNN
+F 3 "" H 2750 4050 50  0001 C CNN
+	1    2750 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+2V8 #PWR?
+U 1 1 61EA4BAF
+P 5700 4050
+F 0 "#PWR?" H 5700 3900 50  0001 C CNN
+F 1 "+2V8" V 5715 4178 50  0000 L CNN
+F 2 "" H 5700 4050 50  0001 C CNN
+F 3 "" H 5700 4050 50  0001 C CNN
+	1    5700 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61EA52C4
+P 2750 3950
+F 0 "#PWR?" H 2750 3800 50  0001 C CNN
+F 1 "+3V3" V 2765 4078 50  0000 L CNN
+F 2 "" H 2750 3950 50  0001 C CNN
+F 3 "" H 2750 3950 50  0001 C CNN
+	1    2750 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61EA59C1
+P 5700 3950
+F 0 "#PWR?" H 5700 3800 50  0001 C CNN
+F 1 "+3V3" V 5715 4078 50  0000 L CNN
+F 2 "" H 5700 3950 50  0001 C CNN
+F 3 "" H 5700 3950 50  0001 C CNN
+	1    5700 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61EA604C
+P 3550 3900
+F 0 "#PWR?" H 3550 3650 50  0001 C CNN
+F 1 "GND" H 3555 3727 50  0000 C CNN
+F 2 "" H 3550 3900 50  0001 C CNN
+F 3 "" H 3550 3900 50  0001 C CNN
+	1    3550 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61EA67DB
+P 6500 3900
+F 0 "#PWR?" H 6500 3650 50  0001 C CNN
+F 1 "GND" H 6505 3727 50  0000 C CNN
+F 2 "" H 6500 3900 50  0001 C CNN
+F 3 "" H 6500 3900 50  0001 C CNN
+	1    6500 3900
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
