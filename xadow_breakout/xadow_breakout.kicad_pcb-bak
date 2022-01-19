@@ -5,8 +5,8 @@
     (drawings 0)
     (tracks 0)
     (zones 0)
-    (modules 2)
-    (nets 1)
+    (modules 4)
+    (nets 16)
   )
 
   (page A4)
@@ -90,6 +90,21 @@
   )
 
   (net 0 "")
+  (net 1 CTP_SDA)
+  (net 2 CTP_SCL)
+  (net 3 GND)
+  (net 4 PWM_BACKLIGHT)
+  (net 5 +3V3)
+  (net 6 +2V8)
+  (net 7 CTP_RST)
+  (net 8 CTP_EINT)
+  (net 9 LCD_DC)
+  (net 10 LCD_TE)
+  (net 11 LCD_SDA)
+  (net 12 LCD_SCL)
+  (net 13 LCD_CS)
+  (net 14 LCD_RST)
+  (net 15 "Net-(J3-Pad1)")
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -98,15 +113,20 @@
     (via_drill 0.4)
     (uvia_dia 0.3)
     (uvia_drill 0.1)
-    (add_net "Net-(J1-Pad1)")
-    (add_net "Net-(J1-Pad10)")
+    (add_net +2V8)
+    (add_net +3V3)
+    (add_net CTP_EINT)
+    (add_net CTP_RST)
+    (add_net CTP_SCL)
+    (add_net CTP_SDA)
+    (add_net GND)
+    (add_net LCD_CS)
+    (add_net LCD_DC)
+    (add_net LCD_RST)
+    (add_net LCD_SCL)
+    (add_net LCD_SDA)
+    (add_net LCD_TE)
     (add_net "Net-(J1-Pad11)")
-    (add_net "Net-(J1-Pad12)")
-    (add_net "Net-(J1-Pad13)")
-    (add_net "Net-(J1-Pad14)")
-    (add_net "Net-(J1-Pad15)")
-    (add_net "Net-(J1-Pad16)")
-    (add_net "Net-(J1-Pad17)")
     (add_net "Net-(J1-Pad18)")
     (add_net "Net-(J1-Pad19)")
     (add_net "Net-(J1-Pad2)")
@@ -121,20 +141,10 @@
     (add_net "Net-(J1-Pad28)")
     (add_net "Net-(J1-Pad29)")
     (add_net "Net-(J1-Pad3)")
-    (add_net "Net-(J1-Pad30)")
-    (add_net "Net-(J1-Pad31)")
     (add_net "Net-(J1-Pad32)")
-    (add_net "Net-(J1-Pad33)")
-    (add_net "Net-(J1-Pad34)")
     (add_net "Net-(J1-Pad35)")
     (add_net "Net-(J1-Pad4)")
-    (add_net "Net-(J1-Pad5)")
     (add_net "Net-(J1-Pad6)")
-    (add_net "Net-(J1-Pad7)")
-    (add_net "Net-(J1-Pad8)")
-    (add_net "Net-(J1-Pad9)")
-    (add_net "Net-(J1-PadP$1)")
-    (add_net "Net-(J1-PadP$2)")
     (add_net "Net-(J2-Pad1)")
     (add_net "Net-(J2-Pad10)")
     (add_net "Net-(J2-Pad11)")
@@ -145,52 +155,145 @@
     (add_net "Net-(J2-Pad16)")
     (add_net "Net-(J2-Pad17)")
     (add_net "Net-(J2-Pad18)")
-    (add_net "Net-(J2-Pad19)")
-    (add_net "Net-(J2-Pad2)")
-    (add_net "Net-(J2-Pad20)")
-    (add_net "Net-(J2-Pad21)")
-    (add_net "Net-(J2-Pad22)")
-    (add_net "Net-(J2-Pad23)")
-    (add_net "Net-(J2-Pad24)")
     (add_net "Net-(J2-Pad25)")
-    (add_net "Net-(J2-Pad26)")
-    (add_net "Net-(J2-Pad27)")
-    (add_net "Net-(J2-Pad28)")
-    (add_net "Net-(J2-Pad29)")
-    (add_net "Net-(J2-Pad3)")
     (add_net "Net-(J2-Pad30)")
-    (add_net "Net-(J2-Pad31)")
     (add_net "Net-(J2-Pad32)")
     (add_net "Net-(J2-Pad33)")
     (add_net "Net-(J2-Pad34)")
-    (add_net "Net-(J2-Pad35)")
     (add_net "Net-(J2-Pad4)")
-    (add_net "Net-(J2-Pad5)")
-    (add_net "Net-(J2-Pad6)")
     (add_net "Net-(J2-Pad7)")
     (add_net "Net-(J2-Pad8)")
     (add_net "Net-(J2-Pad9)")
-    (add_net "Net-(J2-PadP$1)")
-    (add_net "Net-(J2-PadP$2)")
+    (add_net "Net-(J3-Pad1)")
+    (add_net "Net-(J3-Pad2)")
+    (add_net "Net-(J3-Pad3)")
+    (add_net "Net-(J3-Pad4)")
+    (add_net PWM_BACKLIGHT)
   )
 
-  (module "mybays_connector:FPC35-SMD-0.3(FH26W)" (layer F.Cu) (tedit 61E3D511) (tstamp 61E5754A)
-    (at 133.09 98.94)
-    (path /61E5BBB4)
+  (module mybays_connector:USB_Micro-B_Wuerth_629105150521_CircularHoles (layer F.Cu) (tedit 6019833E) (tstamp 61E74725)
+    (at 135.27 131.15)
+    (descr "USB Micro-B receptacle, http://www.mouser.com/ds/2/445/629105150521-469306.pdf")
+    (tags "usb micro receptacle")
+    (path /61E744EA)
+    (attr smd)
+    (fp_text reference J3 (at 0 -3.5) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value microusb (at 0 5.6) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user "PCB Edge" (at 0 3.75) (layer Dwgs.User)
+      (effects (font (size 0.5 0.5) (thickness 0.08)))
+    )
+    (fp_text user %R (at 0 1.05) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start 5.28 -3.34) (end -5.27 -3.34) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 5.28 4.85) (end 5.28 -3.34) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -5.27 4.85) (end 5.28 4.85) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -5.27 -3.34) (end -5.27 4.85) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 1.8 -2.4) (end 2.525 -2.4) (layer F.SilkS) (width 0.15))
+    (fp_line (start -1.8 -2.4) (end -2.525 -2.4) (layer F.SilkS) (width 0.15))
+    (fp_line (start -1.8 -2.825) (end -1.8 -2.4) (layer F.SilkS) (width 0.15))
+    (fp_line (start -1.075 -2.825) (end -1.8 -2.825) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.15 0.75) (end 4.15 -0.65) (layer F.SilkS) (width 0.15))
+    (fp_line (start 4.15 3.3) (end 4.15 3.15) (layer F.SilkS) (width 0.15))
+    (fp_line (start 3.85 3.3) (end 4.15 3.3) (layer F.SilkS) (width 0.15))
+    (fp_line (start 3.85 3.75) (end 3.85 3.3) (layer F.SilkS) (width 0.15))
+    (fp_line (start -3.85 3.3) (end -3.85 3.75) (layer F.SilkS) (width 0.15))
+    (fp_line (start -4.15 3.3) (end -3.85 3.3) (layer F.SilkS) (width 0.15))
+    (fp_line (start -4.15 3.15) (end -4.15 3.3) (layer F.SilkS) (width 0.15))
+    (fp_line (start -4.15 -0.65) (end -4.15 0.75) (layer F.SilkS) (width 0.15))
+    (fp_line (start -1.075 -2.95) (end -1.075 -2.725) (layer F.Fab) (width 0.15))
+    (fp_line (start -1.525 -2.95) (end -1.075 -2.95) (layer F.Fab) (width 0.15))
+    (fp_line (start -1.525 -2.725) (end -1.525 -2.95) (layer F.Fab) (width 0.15))
+    (fp_line (start -1.3 -2.55) (end -1.525 -2.725) (layer F.Fab) (width 0.15))
+    (fp_line (start -1.075 -2.725) (end -1.3 -2.55) (layer F.Fab) (width 0.15))
+    (fp_line (start -2.7 3.75) (end 2.7 3.75) (layer F.Fab) (width 0.15))
+    (fp_line (start 4 -2.25) (end -4 -2.25) (layer F.Fab) (width 0.15))
+    (fp_line (start 4 3.15) (end 4 -2.25) (layer F.Fab) (width 0.15))
+    (fp_line (start 3.7 3.15) (end 4 3.15) (layer F.Fab) (width 0.15))
+    (fp_line (start 3.7 4.35) (end 3.7 3.15) (layer F.Fab) (width 0.15))
+    (fp_line (start -3.7 4.35) (end 3.7 4.35) (layer F.Fab) (width 0.15))
+    (fp_line (start -3.7 3.15) (end -3.7 4.35) (layer F.Fab) (width 0.15))
+    (fp_line (start -4 3.15) (end -3.7 3.15) (layer F.Fab) (width 0.15))
+    (fp_line (start -4 -2.25) (end -4 3.15) (layer F.Fab) (width 0.15))
+    (pad "" np_thru_hole circle (at 2.5 -0.8) (size 0.8 0.8) (drill 0.8) (layers *.Cu *.Mask))
+    (pad "" np_thru_hole circle (at -2.5 -0.8) (size 0.8 0.8) (drill 0.8) (layers *.Cu *.Mask))
+    (pad 0 thru_hole oval (at 3.875 1.95) (size 1 1.8) (drill oval 0.6 1.2) (layers *.Cu *.Mask)
+      (net 3 GND))
+    (pad 0 thru_hole oval (at -3.875 1.95) (size 1 1.8) (drill oval 0.6 1.2) (layers *.Cu *.Mask)
+      (net 3 GND))
+    (pad 0 thru_hole oval (at 3.725 -1.85) (size 1 2) (drill oval 0.7 1.4) (layers *.Cu *.Mask)
+      (net 3 GND))
+    (pad 0 thru_hole oval (at -3.725 -1.85) (size 1 2) (drill oval 0.7 1.4) (layers *.Cu *.Mask)
+      (net 3 GND))
+    (pad 5 smd rect (at 1.3 -1.9) (size 0.45 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 3 GND))
+    (pad 4 smd rect (at 0.65 -1.9) (size 0.45 1.3) (layers F.Cu F.Paste F.Mask))
+    (pad 3 smd rect (at 0 -1.9) (size 0.45 1.3) (layers F.Cu F.Paste F.Mask))
+    (pad 2 smd rect (at -0.65 -1.9) (size 0.45 1.3) (layers F.Cu F.Paste F.Mask))
+    (pad 1 smd rect (at -1.3 -1.9) (size 0.45 1.3) (layers F.Cu F.Paste F.Mask)
+      (net 15 "Net-(J3-Pad1)"))
+    (model ${KISYS3DMOD}/Connector_USB.3dshapes/USB_Micro-B_Wuerth_629105150521_CircularHoles.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+  )
+
+  (module Package_TO_SOT_SMD:SOT-223-3_TabPin2 (layer F.Cu) (tedit 5A02FF57) (tstamp 61E743CE)
+    (at 116.86 123.53 90)
+    (descr "module CMS SOT223 4 pins")
+    (tags "CMS SOT")
+    (path /61E73551)
+    (attr smd)
+    (fp_text reference U1 (at 0 -4.5 90) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value LM1117-3.3 (at 0 4.5 90) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user %R (at 0 0) (layer F.Fab)
+      (effects (font (size 0.8 0.8) (thickness 0.12)))
+    )
+    (fp_line (start 1.91 3.41) (end 1.91 2.15) (layer F.SilkS) (width 0.12))
+    (fp_line (start 1.91 -3.41) (end 1.91 -2.15) (layer F.SilkS) (width 0.12))
+    (fp_line (start 4.4 -3.6) (end -4.4 -3.6) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 4.4 3.6) (end 4.4 -3.6) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -4.4 3.6) (end 4.4 3.6) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -4.4 -3.6) (end -4.4 3.6) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.85 -2.35) (end -0.85 -3.35) (layer F.Fab) (width 0.1))
+    (fp_line (start -1.85 -2.35) (end -1.85 3.35) (layer F.Fab) (width 0.1))
+    (fp_line (start -1.85 3.41) (end 1.91 3.41) (layer F.SilkS) (width 0.12))
+    (fp_line (start -0.85 -3.35) (end 1.85 -3.35) (layer F.Fab) (width 0.1))
+    (fp_line (start -4.1 -3.41) (end 1.91 -3.41) (layer F.SilkS) (width 0.12))
+    (fp_line (start -1.85 3.35) (end 1.85 3.35) (layer F.Fab) (width 0.1))
+    (fp_line (start 1.85 -3.35) (end 1.85 3.35) (layer F.Fab) (width 0.1))
+    (pad 1 smd rect (at -3.15 -2.3 90) (size 2 1.5) (layers F.Cu F.Paste F.Mask)
+      (net 3 GND))
+    (pad 3 smd rect (at -3.15 2.3 90) (size 2 1.5) (layers F.Cu F.Paste F.Mask)
+      (net 15 "Net-(J3-Pad1)"))
+    (pad 2 smd rect (at -3.15 0 90) (size 2 1.5) (layers F.Cu F.Paste F.Mask)
+      (net 5 +3V3))
+    (pad 2 smd rect (at 3.15 0 90) (size 2 3.8) (layers F.Cu F.Paste F.Mask)
+      (net 5 +3V3))
+    (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-223.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+  )
+
+  (module "mybays_connector:FPC35-SMD-0.3(FH26W)" (layer F.Cu) (tedit 61E3D511) (tstamp 61E58C24)
+    (at 135.6 98.56)
+    (path /61E85B8B)
     (fp_text reference J2 (at 0 10) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value FH26W-35S-0.3SHW (at 0 0) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text user 35 (at 4.663948 1.880108) (layer F.SilkS)
-      (effects (font (size 0.635 0.635) (thickness 0.06985)) (justify left))
-    )
-    (fp_text user 34 (at 4.409948 -3.136392) (layer F.SilkS)
-      (effects (font (size 0.635 0.635) (thickness 0.06985)) (justify left))
-    )
-    (fp_text user 2 (at -5.044948 -3.136392) (layer F.SilkS)
-      (effects (font (size 0.635 0.635) (thickness 0.06985)) (justify left))
     )
     (fp_line (start 5.40004 -1.051052) (end 5.999988 -1.051052) (layer F.SilkS) (width 0.127))
     (fp_line (start 5.999988 -1.051052) (end 5.999988 1.701038) (layer F.SilkS) (width 0.127))
@@ -200,8 +303,17 @@
     (fp_line (start -5.40004 -1.051052) (end -5.40004 -1.499108) (layer F.SilkS) (width 0.127))
     (fp_line (start -5.40004 -1.499108) (end 5.40004 -1.499108) (layer F.SilkS) (width 0.127))
     (fp_line (start 5.40004 -1.499108) (end 5.40004 -1.051052) (layer F.SilkS) (width 0.127))
+    (fp_text user 35 (at 4.663948 1.880108) (layer F.SilkS)
+      (effects (font (size 0.635 0.635) (thickness 0.06985)) (justify left))
+    )
+    (fp_text user 34 (at 4.409948 -3.136392) (layer F.SilkS)
+      (effects (font (size 0.635 0.635) (thickness 0.06985)) (justify left))
+    )
+    (fp_text user 2 (at -5.044948 -3.136392) (layer F.SilkS)
+      (effects (font (size 0.635 0.635) (thickness 0.06985)) (justify left))
+    )
     (pad 35 smd custom (at 5.100066 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 8 CTP_EINT) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -273,7 +385,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad P$2 smd custom (at -5.80009 1.276096) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 3 GND) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -291,7 +403,7 @@
            (xy 0.100076 0.574802)) (width 0))
       ))
     (pad P$1 smd custom (at 5.80009 1.276096) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 3 GND) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -309,7 +421,7 @@
            (xy 0.099822 0.574802)) (width 0))
       ))
     (pad 31 smd custom (at 3.899916 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 7 CTP_RST) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -345,7 +457,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 29 smd custom (at 3.299968 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 6 +2V8) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -363,7 +475,7 @@
            (xy 0.07493 0.500126)) (width 0))
       ))
     (pad 28 smd custom (at 2.999994 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 5 +3V3) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -381,7 +493,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 27 smd custom (at 2.70002 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 5 +3V3) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -399,7 +511,7 @@
            (xy 0.07493 0.500126)) (width 0))
       ))
     (pad 26 smd custom (at 2.400046 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 3 GND) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -435,7 +547,7 @@
            (xy 0.07493 0.500126)) (width 0))
       ))
     (pad 24 smd custom (at 1.800098 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 14 LCD_RST) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -453,7 +565,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 23 smd custom (at 1.500124 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 13 LCD_CS) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -471,7 +583,7 @@
            (xy 0.07493 0.500126)) (width 0))
       ))
     (pad 22 smd custom (at 1.199896 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 12 LCD_SCL) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -489,7 +601,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 21 smd custom (at 0.899922 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 11 LCD_SDA) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -507,7 +619,7 @@
            (xy 0.075184 0.500126)) (width 0))
       ))
     (pad 20 smd custom (at 0.599948 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 10 LCD_TE) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -525,7 +637,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 19 smd custom (at 0.299974 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 9 LCD_DC) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -759,7 +871,7 @@
            (xy 0.07493 0.500126)) (width 0))
       ))
     (pad 6 smd custom (at -3.599942 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 3 GND) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -777,7 +889,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 5 smd custom (at -3.899916 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 4 PWM_BACKLIGHT) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -813,7 +925,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 3 smd custom (at -4.499864 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 2 CTP_SCL) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -831,7 +943,7 @@
            (xy 0.07493 0.500126)) (width 0))
       ))
     (pad 2 smd custom (at -4.800092 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 1 CTP_SDA) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -877,14 +989,14 @@
     (fp_text value FH26W-35S-0.3SHW (at 0 0) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_line (start 5.40004 -1.499108) (end 5.40004 -1.051052) (layer F.SilkS) (width 0.127))
-    (fp_line (start -5.40004 -1.499108) (end 5.40004 -1.499108) (layer F.SilkS) (width 0.127))
-    (fp_line (start -5.40004 -1.051052) (end -5.40004 -1.499108) (layer F.SilkS) (width 0.127))
-    (fp_line (start -5.999988 -1.051052) (end -5.40004 -1.051052) (layer F.SilkS) (width 0.127))
-    (fp_line (start -5.999988 1.701038) (end -5.999988 -1.051052) (layer F.SilkS) (width 0.127))
-    (fp_line (start 5.999988 1.701038) (end -5.999988 1.701038) (layer F.SilkS) (width 0.127))
-    (fp_line (start 5.999988 -1.051052) (end 5.999988 1.701038) (layer F.SilkS) (width 0.127))
     (fp_line (start 5.40004 -1.051052) (end 5.999988 -1.051052) (layer F.SilkS) (width 0.127))
+    (fp_line (start 5.999988 -1.051052) (end 5.999988 1.701038) (layer F.SilkS) (width 0.127))
+    (fp_line (start 5.999988 1.701038) (end -5.999988 1.701038) (layer F.SilkS) (width 0.127))
+    (fp_line (start -5.999988 1.701038) (end -5.999988 -1.051052) (layer F.SilkS) (width 0.127))
+    (fp_line (start -5.999988 -1.051052) (end -5.40004 -1.051052) (layer F.SilkS) (width 0.127))
+    (fp_line (start -5.40004 -1.051052) (end -5.40004 -1.499108) (layer F.SilkS) (width 0.127))
+    (fp_line (start -5.40004 -1.499108) (end 5.40004 -1.499108) (layer F.SilkS) (width 0.127))
+    (fp_line (start 5.40004 -1.499108) (end 5.40004 -1.051052) (layer F.SilkS) (width 0.127))
     (fp_text user 35 (at 4.663948 1.880108) (layer F.SilkS)
       (effects (font (size 0.635 0.635) (thickness 0.06985)) (justify left))
     )
@@ -913,7 +1025,7 @@
            (xy 0.07493 0.500126)) (width 0))
       ))
     (pad 34 smd custom (at 4.800092 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 1 CTP_SDA) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -931,7 +1043,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 33 smd custom (at 4.499864 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 2 CTP_SCL) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -967,7 +1079,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad P$2 smd custom (at -5.80009 1.276096) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 3 GND) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -985,7 +1097,7 @@
            (xy 0.100076 0.574802)) (width 0))
       ))
     (pad P$1 smd custom (at 5.80009 1.276096) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 3 GND) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1003,7 +1115,7 @@
            (xy 0.099822 0.574802)) (width 0))
       ))
     (pad 31 smd custom (at 3.899916 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 4 PWM_BACKLIGHT) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1021,7 +1133,7 @@
            (xy 0.075184 0.500126)) (width 0))
       ))
     (pad 30 smd custom (at 3.599942 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 3 GND) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1255,7 +1367,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 17 smd custom (at -0.299974 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 9 LCD_DC) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1273,7 +1385,7 @@
            (xy 0.07493 0.500126)) (width 0))
       ))
     (pad 16 smd custom (at -0.599948 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 10 LCD_TE) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1291,7 +1403,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 15 smd custom (at -0.899922 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 11 LCD_SDA) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1309,7 +1421,7 @@
            (xy 0.07493 0.500126)) (width 0))
       ))
     (pad 14 smd custom (at -1.199896 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 12 LCD_SCL) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1327,7 +1439,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 13 smd custom (at -1.500124 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 13 LCD_CS) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1345,7 +1457,7 @@
            (xy 0.075184 0.500126)) (width 0))
       ))
     (pad 12 smd custom (at -1.800098 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 14 LCD_RST) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1381,7 +1493,7 @@
            (xy 0.075184 0.500126)) (width 0))
       ))
     (pad 10 smd custom (at -2.400046 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 3 GND) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1399,7 +1511,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 9 smd custom (at -2.70002 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 5 +3V3) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1417,7 +1529,7 @@
            (xy 0.07493 0.500126)) (width 0))
       ))
     (pad 8 smd custom (at -2.999994 -1.524) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 5 +3V3) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1435,7 +1547,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 7 smd custom (at -3.299968 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 6 +2V8) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1471,7 +1583,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 5 smd custom (at -3.899916 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 7 CTP_RST) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
@@ -1543,7 +1655,7 @@
            (xy 0.0635 0.42545)) (width 0))
       ))
     (pad 1 smd custom (at -5.100066 1.550924) (size 0 0) (layers F.Cu F.Paste F.Mask)
-      (zone_connect 2)
+      (net 8 CTP_EINT) (zone_connect 2)
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_poly (pts
