@@ -80,12 +80,12 @@ $EndComp
 Wire Wire Line
 	1100 6500 1800 6500
 $Comp
-L Connector_Generic:Conn_01x05 J4
+L Connector_Generic:Conn_01x08 J4
 U 1 1 61E95C9B
 P 3650 5100
 F 0 "J4" H 3730 5142 50  0000 L CNN
-F 1 "Conn_01x05" H 3730 5051 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3650 5100 50  0001 C CNN
+F 1 "Conn_01x08" H 3730 5051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3650 5100 50  0001 C CNN
 F 3 "~" H 3650 5100 50  0001 C CNN
 	1    3650 5100
 	1    0    0    -1  
@@ -103,21 +103,21 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0118
 U 1 1 61EBCCCA
-P 3400 5300
-F 0 "#PWR0118" H 3400 5050 50  0001 C CNN
-F 1 "GND" H 3405 5127 50  0000 C CNN
-F 2 "" H 3400 5300 50  0001 C CNN
-F 3 "" H 3400 5300 50  0001 C CNN
-	1    3400 5300
+P 3400 5500
+F 0 "#PWR0118" H 3400 5250 50  0001 C CNN
+F 1 "GND" H 3405 5327 50  0000 C CNN
+F 2 "" H 3400 5500 50  0001 C CNN
+F 3 "" H 3400 5500 50  0001 C CNN
+	1    3400 5500
 	0    1    1    0   
 $EndComp
-Text GLabel 3400 5200 0    50   Input ~ 0
+Text GLabel 3400 5400 0    50   Input ~ 0
 CTP_RST
-Text GLabel 3400 5100 0    50   Input ~ 0
+Text GLabel 3400 5300 0    50   Input ~ 0
 CTP_EINT
-Text GLabel 3400 4900 0    50   Input ~ 0
+Text GLabel 3400 5100 0    50   Input ~ 0
 CTP_SDA
-Text GLabel 3400 5000 0    50   Input ~ 0
+Text GLabel 3400 5200 0    50   Input ~ 0
 CTP_SCL
 $Comp
 L Connector_Generic:Conn_01x10 J5
@@ -570,4 +570,109 @@ Wire Wire Line
 Connection ~ 2100 6850
 Wire Wire Line
 	2100 6850 2100 6900
+$Comp
+L power:GND #PWR0120
+U 1 1 61F23712
+P 6300 4650
+F 0 "#PWR0120" H 6300 4400 50  0001 C CNN
+F 1 "GND" H 6305 4477 50  0000 C CNN
+F 2 "" H 6300 4650 50  0001 C CNN
+F 3 "" H 6300 4650 50  0001 C CNN
+	1    6300 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0121
+U 1 1 61F23B64
+P 6300 4550
+F 0 "#PWR0121" H 6300 4400 50  0001 C CNN
+F 1 "+3V3" V 6315 4678 50  0000 L CNN
+F 2 "" H 6300 4550 50  0001 C CNN
+F 3 "" H 6300 4550 50  0001 C CNN
+	1    6300 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 5400 3450 5400
+Wire Wire Line
+	3400 5500 3450 5500
+Wire Wire Line
+	3400 4800 3450 4800
+$Comp
+L power:GND #PWR0122
+U 1 1 61F3B110
+P 3400 5000
+F 0 "#PWR0122" H 3400 4750 50  0001 C CNN
+F 1 "GND" H 3405 4827 50  0000 C CNN
+F 2 "" H 3400 5000 50  0001 C CNN
+F 3 "" H 3400 5000 50  0001 C CNN
+	1    3400 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+2V8 #PWR0123
+U 1 1 61F3B455
+P 3400 4900
+F 0 "#PWR0123" H 3400 4750 50  0001 C CNN
+F 1 "+2V8" V 3415 5028 50  0000 L CNN
+F 2 "" H 3400 4900 50  0001 C CNN
+F 3 "" H 3400 4900 50  0001 C CNN
+	1    3400 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0124
+U 1 1 61F3B9BC
+P 3400 4800
+F 0 "#PWR0124" H 3400 4650 50  0001 C CNN
+F 1 "+3V3" V 3415 4928 50  0000 L CNN
+F 2 "" H 3400 4800 50  0001 C CNN
+F 3 "" H 3400 4800 50  0001 C CNN
+	1    3400 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61F4C5A9
+P 10350 5250
+F 0 "H1" H 10450 5296 50  0000 L CNN
+F 1 "MountingHole" H 10450 5205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 10350 5250 50  0001 C CNN
+F 3 "~" H 10350 5250 50  0001 C CNN
+	1    10350 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61F4C8CD
+P 10350 5400
+F 0 "H2" H 10450 5446 50  0000 L CNN
+F 1 "MountingHole" H 10450 5355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 10350 5400 50  0001 C CNN
+F 3 "~" H 10350 5400 50  0001 C CNN
+	1    10350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61F4CBAB
+P 10350 5550
+F 0 "H3" H 10450 5596 50  0000 L CNN
+F 1 "MountingHole" H 10450 5505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 10350 5550 50  0001 C CNN
+F 3 "~" H 10350 5550 50  0001 C CNN
+	1    10350 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61F4CDE8
+P 10350 5700
+F 0 "H4" H 10450 5746 50  0000 L CNN
+F 1 "MountingHole" H 10450 5655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 10350 5700 50  0001 C CNN
+F 3 "~" H 10350 5700 50  0001 C CNN
+	1    10350 5700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
